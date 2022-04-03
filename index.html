@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" href="./contact-form.ico">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Form made by Axel Valiente</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 id="title">Formulario para desarrollador full stack</h1>
+            <p id="description">Hecho para aquellos que desean trabajar para un equipo de desarrolladores :).</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form id="survey-form" action="">
+                <div class="formgroup">
+                    <label id="name-label" for="name">Nombre</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Escribe tu nombre aquí."
+                        required>
+                </div>
+                <div class="formgroup">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="example@gmail.com"
+                        required>
+                </div>
+                <div class="formgroup">
+                    <label id="number-label" for="contact">Número de contacto</label>
+                    <input type="number" class="form-control" min="1111111111" max="99999999999999" name="contact"
+                        id="number" placeholder="Número de telefono" required>
+                </div>
+                <div class="formgroup">
+                    <label id="select-label" for="dropdown">¿Cuál es tu nivel de expieriencia?</label>
+                    <select name="dropdown" class="form-control" id="dropdown">
+                        <option disabled="" selected="" value="">Selecciona una opción</option>
+                        <option value="Sin-experiencia">Sin experiencia</option>
+                        <option value="Junior">Junior</option>
+                        <option value="Semi-Senior">Semi-Senior</option>
+                        <option value="Senior">Senior</option>
+                    </select>
+                </div>
+                <div class="formgroup">
+                    <label id="radio-label">¿Te gustaria ser un desarrollador...?.</label>
+                    <div class="label-container">
+                        <label class="label-container-two"><input class="input-radio" name="carrera" value="front-end"
+                                type="radio" checked="">Front-End</label>
+                        <label class="label-container-two"><input class="input-radio" name="carrera" value="back-end"
+                                type="radio" checked="">Back-End</label>
+                        <label class="label-container-two"><input class="input-radio" name="carrera" value="full-stack"
+                                type="radio" checked="">Full-Stack</label>
+                    </div>
+                </div>
+                <div class="formgroup">
+                    <label id="checkbox-label">¿Cuáles de estas herramientas manejas?.</label>
+                    <div class="label-container">
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad" value="html"
+                                type="checkbox">HTML/HTML5</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad" value="css"
+                                type="checkbox">CSS/CSS3</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad"
+                                value="pre-procesadores" type="checkbox">SASS/SCSS o otro
+                            pre-procesador para CSS</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad"
+                                value="frameworks" type="checkbox">BOOTSTRAP / BULMA u otro
+                            framework para CSS</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad"
+                                value="javascript" type="checkbox">JAVASCRIPT</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad"
+                                value="angular" type="checkbox">ANGULAR</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad" value="react"
+                                type="checkbox">REACT</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad"
+                                value="vue-js" type="checkbox">Vue
+                            JS</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad" value="SQL"
+                                type="checkbox">SQL</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad" value="css"
+                                type="checkbox">NoSQL</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad"
+                                value="mongodb" type="checkbox">MongoDB</label>
+                        <label class="label-container-two"> <input class="input-checkbox" name="habilidad"
+                                value="phyton" type="checkbox">PHYTON</label>
+                    </div>
+                </div>
+                <div class="formgroup">
+                    <label>Dejanos un comentario o una sugernecia.</label>
+                    <textarea class="input-textarea" id="comentario" name="comentario"
+                        placeholder="Escribe aquí..."></textarea>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
